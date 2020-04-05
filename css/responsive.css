@@ -1,10 +1,31 @@
+@media screen and (max-width: 1024px) {
+  .header__middle-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__middle-logo {
+    margin: 11px 0 20px 0;
+  }
+  .header__middle-search {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .header__middle-menu {
+    margin-left: 0;
+    padding-bottom: 14px;
+  }
+  .sub__menu {
+    margin-left: -160%;
+  }
+}
+
 /* tablet và mobile */
 @media (max-width: 1023px) {
   .hide-on-mobile-tablet {
     display: none;
   }
   .navbar__mobile-responsive {
-      display: block
+    display: block;
   }
 }
 
@@ -17,7 +38,7 @@
     margin-left: 1%;
   }
   .header__top {
-    padding: 2%
+    padding: 2%;
   }
   .header__icon-bars--search {
     right: 0;
@@ -30,10 +51,9 @@
     max-width: calc(100% / 5);
   }
   .footer__bottom-item:last-child {
-      display: none;
+    display: none;
   }
 }
-
 
 /*  mobile */
 @media (max-width: 739px) {
