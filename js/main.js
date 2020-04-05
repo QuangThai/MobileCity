@@ -77,7 +77,7 @@ $(document).ready(function () {
     //     fade: true,
     //     asNavFor: '.featured__video-thumb'
     //   });
-    
+
     //   $('.featured__video-thumb').slick({
     //     infinite: true,
     //     slidesToShow: 3,
