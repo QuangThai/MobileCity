@@ -22,10 +22,10 @@ window.onclick = function (event) {
 $(document).ready(function () {
 
     // loading
-   $(window).on('load', function(e){
-    $('body').removeClass('preloading');
-    $('.loading__box').delay(500).fadeOut('fast');
-   });
+    $(window).on('load', function(e){
+        $('body').removeClass('preloading');
+        $('.loading__box').delay(500).fadeOut('fast');
+    });
 
     // back-to-top
     var scrollTop = $(".back-to-top");
@@ -55,18 +55,20 @@ $(document).ready(function () {
     });
 
     // search responsive mobile
-     $('.header__icon-search, .navbar__mobile-btn-close').click(function (e) {
+    $('.header__icon-search, .navbar__mobile-btn-close').click(function (e) {
         e.preventDefault();
         $('.navbar__mobile-search').toggle('navbar__mobile-search--on')
     });
 
     // menu responsive dùng jquery
-    // $('.navbar__mobile-link').on('click', function (e) {
-    //     $(this).parent().find('.navbar__mobile-level').toggleClass('fade-to-right');
-    // });
-
-    // $('.navbar__mobile-link--icon-right').click(function () {
-    //     $('.navbar__mobile-level').removeClass('fade-to-right');
+    // $('.navbar__mobile-link, .navbar__mobile-link--icon-right').on('click', function (e) {
+    //     if($('.navbar__mobile-level').hasClass('fade-to-right') === false) {
+    //         $(this).parent().find('.navbar__mobile-level').toggleClass('fade-to-right');
+    //     }
+    //     else {
+    //         $('.navbar__mobile-level').removeClass('fade-to-right');
+    //     }
+        
     // });
 
 
@@ -81,9 +83,9 @@ $(document).ready(function () {
         dots: false,
         focusOnSelect: true,
         responsive: [
-            { breakpoint: 1024, settings: { slidesToShow: 1 } },
-            { breakpoint: 1023, settings: { slidesToShow: 1 } },
-            { breakpoint: 739, settings: { slidesToShow: 1 } },
+        { breakpoint: 1024, settings: { slidesToShow: 1 } },
+        { breakpoint: 1023, settings: { slidesToShow: 1 } },
+        { breakpoint: 739, settings: { slidesToShow: 1 } },
         ]
     });
 
