@@ -1,6 +1,6 @@
 
 // dropdown js
-var dropdown = document.querySelector('.header__location-title');
+var dropdown = document.querySelector('.header__location-dropdown-active');
 dropdown.addEventListener('click', function (event) {
     event.preventDefault();
     document.querySelector('.header__location-list').classList.toggle('is--open');
@@ -20,6 +20,11 @@ window.onclick = function (event) {
 }
 
 $(document).ready(function () {
+
+   $(window).on('load', function(e){
+    $('body').removeClass('preloading');
+    $('.loading__box').delay(1000).fadeOut('fast');
+   });
 
     // back-to-top
     var scrollTop = $(".back-to-top");
