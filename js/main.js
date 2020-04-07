@@ -21,9 +21,10 @@ window.onclick = function (event) {
 
 $(document).ready(function () {
 
+    // loading
    $(window).on('load', function(e){
     $('body').removeClass('preloading');
-    $('.loading__box').delay(1000).fadeOut('fast');
+    $('.loading__box').delay(500).fadeOut('fast');
    });
 
     // back-to-top
@@ -50,13 +51,25 @@ $(document).ready(function () {
     $('.header__icon-bars, .navbar__overlay').click(function (e) {
         e.preventDefault();
         $('.wrapper').toggleClass('wrapper--overlay');
-        $('.navbar__overlay').toggleClass('navbar__overlay--on');
+        $('.navbar__overlay').fadeToggle();
     });
 
-    $('.header__icon-search, .navbar__mobile-btn-close').click(function (e) {
+    // search responsive mobile
+     $('.header__icon-search, .navbar__mobile-btn-close').click(function (e) {
         e.preventDefault();
         $('.navbar__mobile-search').toggle('navbar__mobile-search--on')
     });
+
+    // menu responsive dùng jquery
+    // $('.navbar__mobile-link').on('click', function (e) {
+    //     $(this).parent().find('.navbar__mobile-level').toggleClass('fade-to-right');
+    // });
+
+    // $('.navbar__mobile-link--icon-right').click(function () {
+    //     $('.navbar__mobile-level').removeClass('fade-to-right');
+    // });
+
+
     // slick.js
     $('.featured__slideshow').slick({
         autoplay: true,

@@ -64,9 +64,7 @@ body {
   -webkit-transform: translate3d(300px, 0px, 0px);
   transform: translate3d(300px, 0px, 0px);
 }
-.navbar__overlay.navbar__overlay--on {
-  display: block;
-}
+
 .navbar__mobile-responsive {
   width: 100%;
   height: var(--header-height-mobile);
@@ -195,6 +193,10 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+/*.navbar__mobile-level.fade-to-right {
+  transform: translate3d(0, 0, 0);
+}*/
 /* navbar mobile search */
 .navbar__mobile-search {
   position: fixed;
