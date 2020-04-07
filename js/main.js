@@ -63,7 +63,7 @@ $(document).ready(function () {
     // menu responsive dùng jquery
     // $('.navbar__mobile-link, .navbar__mobile-link--icon-right').on('click', function (e) {
     //     if($('.navbar__mobile-level').hasClass('fade-to-right') === false) {
-    //         $(this).parent().find('.navbar__mobile-level').toggleClass('fade-to-right');
+    //         $(this).parent().find('.navbar__mobile-level').addClass('fade-to-right');
     //     }
     //     else {
     //         $('.navbar__mobile-level').removeClass('fade-to-right');
